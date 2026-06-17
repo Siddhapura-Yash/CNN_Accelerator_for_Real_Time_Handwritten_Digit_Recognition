@@ -92,6 +92,9 @@ CNN-Accelerator-for-Real-Time-Handwritten-Digit-Recognition
   <img src="doc/images/result.gif" width="500">
 </p>
 
+YouTube Demo: [https://youtube.com/shorts/lP0CcqOGTO4?si=nFGsThKfcxfNwQfs]
+
+---
 
 ## Resource Utilization
 
@@ -108,3 +111,4 @@ The design has been successfully synthesized and can operate at frequencies up t
 ## License
 
 This project is released under the MIT License.
+
