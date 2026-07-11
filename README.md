@@ -109,8 +109,33 @@ The design has been successfully synthesized and can operate at frequencies up t
 
 ---
 
+## Performance
+
+* **Maximum Operating Frequency:** 100 MHz
+* **Parallel Compute Units:** 16 INT8 MACs
+* **Peak Compute Throughput:** **3.2 GOPS (0.0032 TOPS)**
+
+**Calculation:**
+
+* 16 parallel MACs
+* 1 MAC = 1 Multiply + 1 Add = **2 operations**
+* Operations per clock = **16 × 2 = 32**
+* Clock frequency = **100 MHz = 100 × 10⁶ cycles/second**
+
+```text
+Operations/second = 32 × 100 × 10⁶
+                  = 3.2 × 10⁹
+
+Peak Throughput = 3.2 GOPS = 0.0032 TOPS
+```
+
+> **Note:** The convolution and fully connected layers use separate MAC hardware but execute sequentially rather than simultaneously. Therefore, the reported throughput represents the peak performance of the active compute engine at any given time.
+
+---
+
 ## License
 
 This project is released under the MIT License.
+
 
 
